@@ -1,7 +1,7 @@
 {
-  "name": "aos-agent-health-mcp",
-  "version": "0.2.0",
-  "display_name": "AOS Agent Health Reporter",
+  "name": "mcp-agent-health",
+  "version": "0.3.0",
+  "display_name": "MCP Agent Health Reporter",
   "category": "operations / agent reliability / deployment readiness",
   "description": "Validate AOS-compliant agent health before deployment. Catch agents that look fine locally but silently fail in production — scores manifest, runtime services, immune loop, and physical evidence under any target directory.",
   "limitations": "Advisory health scan only — findings do not block deployment by default. Scores are based on static and runtime checks under target_dir; false negatives are possible if agents hide failures outside scanned paths.",
@@ -20,21 +20,21 @@
       "description": "Audit all agents under target_dir"
     }
   ],
-  "install": "pip install aos-agent-health-mcp==0.2.0",
+  "install": "pip install mcp-agent-health==0.3.0",
   "usage": {
-    "cli": "aos-health-mcp",
+    "cli": "mcp-agent-health",
     "env": "AOS_HEALTH_TARGET_DIR=/path/to/agents"
   },
   "mcp": {
-    "command": "aos-health-mcp",
+    "command": "mcp-agent-health",
     "transport": "stdio"
   },
   "links": {
-    "pypi": "https://pypi.org/project/aos-agent-health-mcp/",
-    "repository": "https://github.com/aos-standard/aos-agent-health-mcp",
-    "agent_card": "https://raw.githubusercontent.com/aos-standard/aos-agent-health-mcp/main/packaging/agent_card.json"
+    "pypi": "https://pypi.org/project/mcp-agent-health/",
+    "repository": "https://github.com/aos-standard/mcp-agent-health",
+    "agent_card": "https://raw.githubusercontent.com/aos-standard/mcp-agent-health/main/packaging/agent_card.json"
   },
-  "homepage": "https://github.com/aos-standard/aos-agent-health-mcp",
-  "issues": "https://github.com/aos-standard/aos-agent-health-mcp/issues",
-  "repository": "https://github.com/aos-standard/aos-agent-health-mcp"
+  "homepage": "https://github.com/aos-standard/mcp-agent-health",
+  "issues": "https://github.com/aos-standard/mcp-agent-health/issues",
+  "repository": "https://github.com/aos-standard/mcp-agent-health"
 }

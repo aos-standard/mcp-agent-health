@@ -3,28 +3,28 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "aos-agent-health-mcp"
-version = "0.2.0"
-description = "MCP server to validate AOS-compliant agent health — catch agents that silently fail in production."
+name = "mcp-agent-health"
+version = "0.3.0"
+description = "MCP server to validate agent health under AOS discipline — catch agents that silently fail in production."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "AOS Standard" }]
-keywords = ["mcp", "aos", "agent", "health", "validator", "compliance"]
+keywords = ["mcp", "agent-health", "agent", "health", "validator", "compliance"]
 dependencies = [
     "mcp>=1.0.0",
 ]
 
 [project.scripts]
-aos-health-mcp = "aos_health_mcp.server:main"
+mcp-agent-health = "aos_health_mcp.server:main"
 
 [project.urls]
-Homepage = "https://github.com/aos-standard/aos-agent-health-mcp"
-Documentation = "https://github.com/aos-standard/aos-agent-health-mcp#readme"
-Repository = "https://github.com/aos-standard/aos-agent-health-mcp"
-Issues = "https://github.com/aos-standard/aos-agent-health-mcp/issues"
+Homepage = "https://github.com/aos-standard/mcp-agent-health"
+Documentation = "https://github.com/aos-standard/mcp-agent-health#readme"
+Repository = "https://github.com/aos-standard/mcp-agent-health"
+Issues = "https://github.com/aos-standard/mcp-agent-health/issues"
 Catalog = "https://raw.githubusercontent.com/aos-standard/catalog/main/catalog.json"
-Agent-Card = "https://raw.githubusercontent.com/aos-standard/aos-agent-health-mcp/main/packaging/agent_card.json"
+Agent-Card = "https://raw.githubusercontent.com/aos-standard/mcp-agent-health/main/packaging/agent_card.json"
 
 [tool.setuptools.packages.find]
 where = ["."]
