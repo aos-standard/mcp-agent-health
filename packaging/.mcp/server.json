@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.aos-standard/mcp-agent-health",
   "title": "MCP Agent Health Reporter",
-  "description": "Validate agent health under AOS discipline before deployment. Advisory scan of manifest, runtime services, immune loop, and physical evidence.",
+  "description": "Advisory AOS agent health scan before deployment (manifest, services, immune loop, evidence).",
   "version": "0.3.1",
   "websiteUrl": "https://raw.githubusercontent.com/aos-standard/catalog/main/catalog.json",
   "repository": {
