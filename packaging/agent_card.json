@@ -1,6 +1,6 @@
 {
   "name": "mcp-agent-health",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "display_name": "MCP Agent Health Reporter",
   "category": "operations / agent reliability / deployment readiness",
   "description": "Validate AOS-compliant agent health before deployment. Catch agents that look fine locally but silently fail in production — scores manifest, runtime services, immune loop, and physical evidence under any target directory.",
@@ -20,7 +20,7 @@
       "description": "Audit all agents under target_dir"
     }
   ],
-  "install": "pip install mcp-agent-health==0.3.0",
+  "install": "pip install mcp-agent-health==0.3.1",
   "usage": {
     "cli": "mcp-agent-health",
     "env": "AOS_HEALTH_TARGET_DIR=/path/to/agents"

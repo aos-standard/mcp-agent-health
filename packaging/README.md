@@ -1,6 +1,8 @@
 # MCP Agent Health Reporter
 
-> **Renamed (2026-07):** Formerly `aos-agent-health-mcp` / CLI `aos-health-mcp`. Migrate with `pip install mcp-agent-health==0.3.0` and update your MCP config `command` to `mcp-agent-health`.
+<!-- mcp-name: io.github.aos-standard/mcp-agent-health -->
+
+> **Renamed (2026-07):** Formerly `aos-agent-health-mcp` / CLI `aos-health-mcp`. Migrate with `pip install mcp-agent-health==0.3.1` and update your MCP config `command` to `mcp-agent-health`.
 
 MCP server that **validates agent health under AOS discipline** and reports readiness scores.
 Use it to catch agents that **silently fail in production** — healthy locally, broken when deployed.
@@ -8,7 +10,7 @@ Use it to catch agents that **silently fail in production** — healthy locally,
 ## Install
 
 ```bash
-pip install mcp-agent-health==0.3.0
+pip install mcp-agent-health==0.3.1
 # or editable from source:
 # pip install -e ./packaging
 ```

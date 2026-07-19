@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.aos-standard/mcp-agent-health",
+  "title": "MCP Agent Health Reporter",
+  "description": "Validate agent health under AOS discipline before deployment. Advisory scan of manifest, runtime services, immune loop, and physical evidence.",
+  "version": "0.3.1",
+  "websiteUrl": "https://raw.githubusercontent.com/aos-standard/catalog/main/catalog.json",
+  "repository": {
+    "url": "https://github.com/aos-standard/mcp-agent-health",
+    "source": "github",
+    "subfolder": "packaging"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "mcp-agent-health",
+      "version": "0.3.1",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
